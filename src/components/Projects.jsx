@@ -1,17 +1,32 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import login from '../assets/1login.png';
+import register from '../assets/2register.png';
+import location from '../assets/3lokasi.png';
+import free from '../assets/4free.png';
+import payment from '../assets/5payment.png';
+import admin from '../assets/6admin.png';
+import premium from '../assets/7premium.png';
 
 const Projects = () => {
   const projects = [
     {
-    "id": "weather-app",
-    "title": "Weather App",
-    "slug": "weather-app",
-    "description": "Real-time weather forecasting application with location-based weather data and 5-day forecast",
-    "category": "Web Development",
-    "image": "https://via.placeholder.com/400x300",
-    "detailsUrl": "/project/weather-app"
+      id: "weather-app",
+      title: "Weather App",
+      slug: "weather-app",
+      description: "Real-time weather forecasting application with location-based weather data and multiple subscription tiers",
+      category: "Web Development",
+      image: login,
+      screenshots: [
+        { id: 1, src: login, caption: "Login Screen" },
+        { id: 2, src: register, caption: "Registration Page" },
+        { id: 3, src: location, caption: "Location Selection" },
+        { id: 4, src: free, caption: "Free Tier Dashboard" },
+        { id: 5, src: payment, caption: "Payment Gateway" },
+        { id: 6, src: admin, caption: "Admin Panel" },
+        { id: 7, src: premium, caption: "Premium Dashboard" }
+      ]
     }
   ];
 
@@ -39,24 +54,51 @@ const Projects = () => {
               key={project.id}
               className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg border border-purple-100 dark:border-gray-700"
             >
-              <div className="p-2 absolute top-0 right-0 mt-6 mr-6">
-                <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-white text-sm px-3 py-1 rounded-full">
-                  {project.category}
-                </span>
-              </div>
+              <Link to={`/project/${project.slug}`} className="block">
+                <div className="relative">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover object-top"
+                  />
+                  <div className="absolute top-0 right-0 mt-4 mr-4">
+                    <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-white text-sm px-3 py-1 rounded-full">
+                      {project.category}
+                    </span>
+                  </div>
+                </div>
+              </Link>
               
-              <div className="pt-16 px-8 pb-8 flex flex-col h-full">
-                <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                  {project.title}
-                </h3>
-                <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mb-6"></div>
+              <div className="p-6 flex flex-col h-full">
+                <Link to={`/project/${project.slug}`} className="block group">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mb-4"></div>
+                </Link>
                 
                 <p className="text-gray-700 dark:text-gray-300 mb-6 flex-grow">
                   {project.description}
                 </p>
                 
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.screenshots.slice(0, 4).map((screenshot) => (
+                    <img 
+                      key={screenshot.id}
+                      src={screenshot.src}
+                      alt={screenshot.caption}
+                      className="w-14 h-14 object-cover rounded border border-purple-100 dark:border-gray-700"
+                    />
+                  ))}
+                  {project.screenshots.length > 4 && (
+                    <div className="w-14 h-14 bg-purple-100 dark:bg-gray-700 rounded flex items-center justify-center text-purple-600 dark:text-purple-400 font-medium">
+                      +{project.screenshots.length - 4}
+                    </div>
+                  )}
+                </div>
+                
                 <Link 
-                  to={project.detailsUrl}
+                  to={`/project/${project.slug}`}
                   className="flex items-center text-purple-600 dark:text-purple-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300"
                 >
                   <span>View Details</span>
