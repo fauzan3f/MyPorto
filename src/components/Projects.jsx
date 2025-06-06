@@ -13,7 +13,7 @@ const Projects = () => {
   const projects = [
     {
       id: "weather-app",
-      title: "Weather App",
+      title: "SkyBeacon",
       slug: "weather-app",
       description: "Real-time weather forecasting application with location-based weather data and multiple subscription tiers",
       category: "Web Development",

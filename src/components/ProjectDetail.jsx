@@ -18,9 +18,9 @@ const ProjectDetail = () => {
   const projectsData = {
     "weather-app": {
       id: "weather-app",
-      title: "Weather App",
+      title: "SkyBeacon",
       slug: "weather-app",
-      description: "A comprehensive weather application built with React and Node.js. The app features real-time weather data, location-based forecasts, and multiple subscription tiers for enhanced features.",
+      description: "A comprehensive weather application built with Laravel and PHP. The app features real-time weather data, location-based forecasts, and multiple subscription tiers for enhanced features.",
       longDescription: `This Weather App is a full-stack project that demonstrates a complete user journey from registration to premium features. It includes:
 
 • User authentication with secure login and registration

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Cpu, Code, Palette, BookOpen, Database, Globe, X } from 'lucide-react';
 import certif1 from '../assets/udemy1.jpg';
 import certif2 from '../assets/skillage.png';
+import certif3 from '../assets/codespace.jpg';
 
 const About = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -14,10 +15,16 @@ const About = () => {
       image: certif1
     },
     {
-      title: "Digital Skills Certificate",
+      title: "Front End Development",
       issuer: "Skillage",
-      date: "2022",
+      date: "2023",
       image: certif2
+    },
+    {
+      title: "Backend Development",
+      issuer: "Codespace",
+      date: "2024",
+      image: certif3
     }
   ];
 
