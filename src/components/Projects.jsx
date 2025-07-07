@@ -1,13 +1,14 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import login from '../assets/1login.png';
-import register from '../assets/2register.png';
-import location from '../assets/3lokasi.png';
-import free from '../assets/4free.png';
-import payment from '../assets/5payment.png';
-import admin from '../assets/6admin.png';
-import premium from '../assets/7premium.png';
+import login from '../assets/skybeacon/1login.png';
+import register from '../assets/skybeacon/2register.png';
+import location from '../assets/skybeacon/3lokasi.png';
+import free from '../assets/skybeacon/4free.png';
+import payment from '../assets/skybeacon/5payment.png';
+import admin from '../assets/skybeacon/6admin.png';
+import premium from '../assets/skybeacon/7premium.png';
+import smokelogin from '../assets/finalsmoke/1form.png';
 
 const Projects = () => {
   const projects = [
@@ -26,6 +27,18 @@ const Projects = () => {
         { id: 5, src: payment, caption: "Payment Gateway" },
         { id: 6, src: admin, caption: "Admin Panel" },
         { id: 7, src: premium, caption: "Premium Dashboard" }
+      ]
+    },
+    {
+      id: "finalsmoke",
+      title: "FinalSmoke+",
+      slug: "finalsmoke",
+      description: "Cigarette and vape consumption tracking web app with personalized daily logging, health and financial progress statistics, and responsive mobile-friendly design.",
+      category: "Web Development",
+      image: smokelogin,
+      screenshots: [
+        { id: 1, src: admin, caption: "Admin Dashboard" },
+        { id: 2, src: premium, caption: "Premium Features" }
       ]
     }
   ];

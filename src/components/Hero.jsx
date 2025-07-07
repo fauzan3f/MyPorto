@@ -52,7 +52,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
-            Fullstack Developer | Web3 Enthusiast | Blockchain Explorer
+            Fullstack Developer
             </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <a 

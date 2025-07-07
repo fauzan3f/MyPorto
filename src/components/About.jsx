@@ -44,11 +44,6 @@ const About = () => {
       icon: <Cpu className="w-16 h-16" />, 
       description: "Building interactive UIs with components, hooks, and context API" 
     },
-    { 
-      name: "Web3 & Blockchain", 
-      icon: <Globe className="w-16 h-16" />, 
-      description: "Smart contracts, decentralized applications, and blockchain architecture" 
-    }
   ];
 
   const openLightbox = (image) => {
@@ -79,7 +74,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            Passionate about crafting seamless digital experiences through code. I specialize in building modern web applications with React, TypeScript, and Node.js, while diving deep into the decentralized world of blockchain and smart contracts. My mission: bridging cutting-edge technology with intuitive design.
+            Passionate about crafting seamless digital experiences through code. I specialize in building modern and responsive web applications using ReactJS, Laravel, and Tailwind CSS. My mission: bridging powerful backend systems with intuitive frontend design to create impactful web solutions.
             </p>
           </div>
           

@@ -2,7 +2,7 @@ import React from 'react';
 import { Heart } from 'lucide-react';
 import PropTypes from 'prop-types';
 
-const Footer = ({ nim, studentName }) => {
+const Footer = ({ studentName }) => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,9 +13,7 @@ const Footer = ({ nim, studentName }) => {
             <p className="text-sm text-gray-700 dark:text-gray-300">
               &copy; {currentYear} {studentName}. All rights reserved.
             </p>
-            <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
-              NIM: {nim}
-            </p>
+
           </div>
           
           <div className="hidden md:block">
