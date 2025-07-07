@@ -36,7 +36,7 @@ const ProjectDetail = () => {
       title: "SkyBeacon",
       slug: "weather-app",
       description: "A comprehensive weather application built with Laravel and PHP. The app features real-time weather data, location-based forecasts, and multiple subscription tiers for enhanced features.",
-      longDescription: `This Weather App is a full-stack project that demonstrates a complete user journey from registration to premium features. It includes:
+      longDescription: `This Weather App is a full-stack project that demonstrates a complete user journey from registration to premium features. It includes :
 
 • User authentication with secure login and registration
 • Location-based weather services
@@ -67,7 +67,16 @@ const ProjectDetail = () => {
       title: "FinalSmoke",
       slug: "finalsmoke",
       description: "FinalSmoke+ is a modern web application built with React, designed to help users monitor and reduce their cigarette or vape consumption. The app provides a personalized experience with daily tracking, health and financial statistics, and interactive onboarding to guide users through their quitting journey.",
-      longDescription: `Penjelasan detail mengenai projek FinalSmoke, fitur, teknologi, dan tujuan projek ini.`,
+      longDescription: `This project demonstrates a complete user journey and includes :
+      
+- Interactive onboarding for personalized setup
+- Daily logging of cigarette/vape consumption
+- Real-time health progress and money saved statistics
+- Responsive design for seamless use on all devices
+- Local data storage for privacy and offline access
+- Intuitive navigation with mobile-friendly dropdown menu
+- Customizable user settings and progress visualization
+FinalSmoke+ empowers users to take control of their habits with actionable insights and a user-centric interface.`,
       category: "Web Development",
       date: "Juli 2025",
       client: "Personal Project",
