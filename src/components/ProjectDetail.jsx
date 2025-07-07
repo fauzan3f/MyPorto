@@ -68,7 +68,7 @@ const ProjectDetail = () => {
       slug: "finalsmoke",
       description: "FinalSmoke+ is a modern web application built with React, designed to help users monitor and reduce their cigarette or vape consumption. The app provides a personalized experience with daily tracking, health and financial statistics, and interactive onboarding to guide users through their quitting journey.",
       longDescription: `This project demonstrates a complete user journey and includes :
-      
+
 - Interactive onboarding for personalized setup
 - Daily logging of cigarette/vape consumption
 - Real-time health progress and money saved statistics
@@ -80,7 +80,7 @@ FinalSmoke+ empowers users to take control of their habits with actionable insig
       category: "Web Development",
       date: "Juli 2025",
       client: "Personal Project",
-      technologies: ["React"],
+      technologies: ["React", "React Router DOM", "React Scripts", "Jest & React Testing Library", "Web Vitals", "CSS"],
       githubUrl: "https://github.com/username/finalsmoke",
       mainImage: smokelogin,
       screenshots: [
