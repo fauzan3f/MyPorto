@@ -3,17 +3,12 @@ import { Cpu, Code, Palette, BookOpen, Database, Globe, X } from 'lucide-react';
 import certif1 from '../assets/udemy1.jpg';
 import certif2 from '../assets/skillage.png';
 import certif3 from '../assets/codespace.jpg';
+import certif4 from '../assets/sertif/react-course.png';
 
 const About = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const certificates = [
-    {
-      title: "Advanced Web Development",
-      issuer: "Udemy",
-      date: "2024",
-      image: certif1
-    },
     {
       title: "Front End Development",
       issuer: "Skillage",
@@ -21,10 +16,22 @@ const About = () => {
       image: certif2
     },
     {
+      title: "Advanced Web Development",
+      issuer: "Udemy",
+      date: "2024",
+      image: certif1
+    },
+    {
       title: "Backend Development",
       issuer: "Codespace",
       date: "2024",
       image: certif3
+    },
+    {
+      title: "React Course",
+      issuer: "Udemy",
+      date: "2025",
+      image: certif4
     }
   ];
 
