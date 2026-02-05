@@ -51,6 +51,16 @@ const About = () => {
       icon: <Cpu className="w-16 h-16" />, 
       description: "Building interactive UIs with components, hooks, and context API" 
     },
+    { 
+      name: "Python", 
+      icon: <Code className="w-16 h-16" />, 
+      description: "Versatile programming for web development, automation, and data processing" 
+    },
+    { 
+      name: "Data Handling & Analysis", 
+      icon: <Database className="w-16 h-16" />, 
+      description: "Processing datasets, data cleaning, and visualization using Pandas and NumPy" 
+    },
   ];
 
   const openLightbox = (image) => {
@@ -81,7 +91,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            Passionate about crafting seamless digital experiences through code. I specialize in building modern and responsive web applications using ReactJS, Laravel, and Tailwind CSS. My mission: bridging powerful backend systems with intuitive frontend design to create impactful web solutions.
+            I am a Computer Science student focused on AI Engineering and Machine Learning, with a strong interest in building intelligent systems that can be applied in real-world products. I work with Python for data processing and model development, and leverage my web development background to deploy and integrate AI models into scalable applications. My goal is to create AI solutions that are not only accurate, but also practical and impactful.
             </p>
           </div>
           

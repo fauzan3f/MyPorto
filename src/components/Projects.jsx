@@ -9,6 +9,12 @@ import payment from '../assets/skybeacon/5payment.png';
 import admin from '../assets/skybeacon/6admin.png';
 import premium from '../assets/skybeacon/7premium.png';
 import smokelogin from '../assets/finalsmoke/1form.png';
+import smtampilan from '../assets/finalsmoke/5tampilan.png';
+import fcdash from '../assets/faceid/1.jpeg';
+import fcreg from '../assets/faceid/2.jpeg';
+import fctrain from '../assets/faceid/3.jpeg';
+import fccomplete from '../assets/faceid/4.jpeg';
+import fcopen from '../assets/faceid/5.jpeg';
 
 const Projects = () => {
   const projects = [
@@ -18,7 +24,7 @@ const Projects = () => {
       slug: "weather-app",
       description: "Real-time weather forecasting application with location-based weather data and multiple subscription tiers",
       category: "Web Development",
-      image: login,
+      image: premium,
       screenshots: [
         { id: 1, src: login, caption: "Login Screen" },
         { id: 2, src: register, caption: "Registration Page" },
@@ -35,10 +41,24 @@ const Projects = () => {
       slug: "finalsmoke",
       description: "Cigarette and vape consumption tracking web app with personalized daily logging, health and financial progress statistics, and responsive mobile-friendly design.",
       category: "Web Development",
-      image: smokelogin,
+      image: smtampilan,
       screenshots: [
         { id: 1, src: admin, caption: "Admin Dashboard" },
         { id: 2, src: premium, caption: "Premium Features" }
+      ]
+    },
+    {
+      id: "neurolock",
+      title: "NeuroLock",
+      slug: "neurolock",
+      description: "Smart Door Lock System integrated with Face Recognition technology for secure and automated access control.",
+      category: "AI & IoT",
+      image: fcdash,
+      screenshots: [
+        { id: 1, src: fcdash, caption: "Standby Dashboard" },
+        { id: 2, src: fcreg, caption: "User Registration" },
+        { id: 3, src: fctrain, caption: "Dataset Training" },
+        { id: 4, src: fcopen, caption: "Access Granted" }
       ]
     }
   ];

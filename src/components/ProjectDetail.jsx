@@ -23,6 +23,13 @@ import smtips from '../assets/finalsmoke/9tips.png';
 import smstats from '../assets/finalsmoke/10stats.png';
 import smtimeline from '../assets/finalsmoke/11timeline.png';
 import smsetting from '../assets/finalsmoke/12setting.png';
+import fcdash from '../assets/faceid/1.jpeg';
+import fcreg from '../assets/faceid/2.jpeg';
+import fctrain from '../assets/faceid/3.jpeg';
+import fccomplete from '../assets/faceid/4.jpeg';
+import fcopen from '../assets/faceid/5.jpeg';
+import fcunlock from '../assets/faceid/6.jpeg';
+import fclocked from '../assets/faceid/7.jpeg';
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -69,13 +76,13 @@ const ProjectDetail = () => {
       description: "FinalSmoke+ is a modern web application built with React, designed to help users monitor and reduce their cigarette or vape consumption. The app provides a personalized experience with daily tracking, health and financial statistics, and interactive onboarding to guide users through their quitting journey.",
       longDescription: `This project demonstrates a complete user journey and includes :
 
-- Interactive onboarding for personalized setup
-- Daily logging of cigarette/vape consumption
-- Real-time health progress and money saved statistics
-- Responsive design for seamless use on all devices
-- Local data storage for privacy and offline access
-- Intuitive navigation with mobile-friendly dropdown menu
-- Customizable user settings and progress visualization
+• Interactive onboarding for personalized setup
+• Daily logging of cigarette/vape consumption
+• Real-time health progress and money saved statistics
+• Responsive design for seamless use on all devices
+• Local data storage for privacy and offline access
+• Intuitive navigation with mobile-friendly dropdown menu
+• Customizable user settings and progress visualization
 FinalSmoke+ empowers users to take control of their habits with actionable insights and a user-centric interface.`,
       category: "Web Development",
       date: "Juli 2025",
@@ -98,6 +105,36 @@ FinalSmoke+ empowers users to take control of their habits with actionable insig
         { id: 12, src: smstats, caption: "12. Statistics for stop smoking - Detailed analytics of smoking reduction progress" },
         { id: 13, src: smtimeline, caption: "13. Timeline for stop smoking - Chronological view of user's quitting journey" },
         { id: 14, src: smsetting, caption: "14. Settings for change the daily habit and money saving - Configuration options for habits and financial tracking" },
+      ]
+    },
+    "neurolock": {
+      id: "neurolock",
+      title: "NeuroLock",
+      slug: "neurolock",
+      description: "A smart door lock system integrated with computer vision for secure access control using face recognition.",
+      longDescription: `This project implements a secure door access system using facial recognition technology. Key features include:
+
+• Standby Mode: Initial system state monitoring door status (LOCKED).
+• User Registration: Admin interface to register new users and associate identities.
+• Face Dataset Collection: Automated capture of 15 face samples for training.
+• Model Training: Processing collected data to train the recognition model.
+• Real-time Recognition: Continuous camera monitoring for known faces.
+• Access Control: Automatic door unlocking upon successful identification.
+• Intruder Detection: Denies access to unregistered faces and maintains locked state.`,
+      category: "Deep Learning",
+      date: "August 2025",
+      client: "Personal Project",
+      technologies: ["Python", "OpenCV", "Face Recognition", "Tkinter"],
+      githubUrl: "https://github.com/username/neurolock",
+      mainImage: fcdash,
+      screenshots: [
+        { id: 1, src: fcdash, caption: "1. System Standby - Initial dashboard state with door locked" },
+        { id: 2, src: fcreg, caption: "2. User Registration - Admin form to register new face data" },
+        { id: 3, src: fctrain, caption: "3. Data Collection - Capturing 15 face images for training dataset" },
+        { id: 4, src: fccomplete, caption: "4. Registration Complete - User appears in registered list" },
+        { id: 5, src: fcopen, caption: "5. Access Granted - System running and door unlocked for user" },
+        { id: 6, src: fcunlock, caption: "6. Camera View - Live feed showing successful identification" },
+        { id: 7, src: fclocked, caption: "7. Access Denied - Security lock active for unregistered face" }
       ]
     }
   };
