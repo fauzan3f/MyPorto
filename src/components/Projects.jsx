@@ -52,7 +52,7 @@ const Projects = () => {
       title: "NeuroLock",
       slug: "neurolock",
       description: "Smart Door Lock System integrated with Face Recognition technology for secure and automated access control.",
-      category: "AI & IoT",
+      category: "Deep Learning",
       image: fcdash,
       screenshots: [
         { id: 1, src: fcdash, caption: "Standby Dashboard" },
