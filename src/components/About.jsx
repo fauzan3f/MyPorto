@@ -98,7 +98,7 @@ const About = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-500 mx-auto mb-6"></div>
             <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
-            I am a Computer Science student focused on AI Engineering and Machine Learning, with a strong interest in building intelligent systems that can be applied in real-world products. I work with Python for data processing and model development, and leverage my web development background to deploy and integrate AI models into scalable applications. My goal is to create AI solutions that are not only accurate, but also practical and impactful.
+            Full-Stack Developer passionate about bringing AI into production. I specialize in building end-to-end web applications that seamlessly integrate advanced AI solutions to enhance user experience and automation.
             </p>
           </div>
           
