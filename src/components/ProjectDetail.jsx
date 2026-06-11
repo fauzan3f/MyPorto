@@ -59,7 +59,7 @@ This project focuses on creating a smooth, modern financial tracking experience 
       date: "Juni 2026",
       client: "Personal Project",
       technologies: ["React", "Go (Gin)", "PostgreSQL", "Google OAuth", "OCR", "OpenRouter LLM"],
-      githubUrl: "https://github.com/username/auto-finance",
+      githubUrl: "https://github.com/fauzan3f/Auto-Finance",
       mainImage: afdashboard,
       screenshots: [
         { id: 1, src: aflogin, caption: "1. Login Screen - Card-based profile registration and secure user authentication" },
