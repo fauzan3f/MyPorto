@@ -15,9 +15,33 @@ import fcreg from '../assets/faceid/2.jpeg';
 import fctrain from '../assets/faceid/3.jpeg';
 import fccomplete from '../assets/faceid/4.jpeg';
 import fcopen from '../assets/faceid/5.jpeg';
+import aflogin from '../assets/auto finance/1login.jpeg';
+import afdashboard from '../assets/auto finance/2dashboard.jpeg';
+import afgmail from '../assets/auto finance/3gmailsync.jpeg';
+import afsyncing from '../assets/auto finance/4syncing.jpeg';
+import afscan from '../assets/auto finance/5scanreceipt.jpeg';
+import afresult from '../assets/auto finance/6resultreceipt.jpeg';
+import afcashflow from '../assets/auto finance/7cashflow.jpeg';
 
 const Projects = () => {
   const projects = [
+    {
+      id: "auto-finance",
+      title: "Auto Finance",
+      slug: "auto-finance",
+      description: "Personal finance web application designed to automate expense tracking with AI receipt scanning and Gmail transaction syncing.",
+      category: "Web Development",
+      image: afdashboard,
+      screenshots: [
+        { id: 1, src: aflogin, caption: "Login Screen" },
+        { id: 2, src: afdashboard, caption: "Dashboard" },
+        { id: 3, src: afgmail, caption: "Gmail Sync" },
+        { id: 4, src: afsyncing, caption: "Sync Progress" },
+        { id: 5, src: afscan, caption: "Receipt Scanner" },
+        { id: 6, src: afresult, caption: "Receipt Result" },
+        { id: 7, src: afcashflow, caption: "Cash Flow" }
+      ]
+    },
     {
       id: "weather-app",
       title: "SkyBeacon",

@@ -30,6 +30,13 @@ import fccomplete from '../assets/faceid/4.jpeg';
 import fcopen from '../assets/faceid/5.jpeg';
 import fcunlock from '../assets/faceid/6.jpeg';
 import fclocked from '../assets/faceid/7.jpeg';
+import aflogin from '../assets/auto finance/1login.jpeg';
+import afdashboard from '../assets/auto finance/2dashboard.jpeg';
+import afgmail from '../assets/auto finance/3gmailsync.jpeg';
+import afsyncing from '../assets/auto finance/4syncing.jpeg';
+import afscan from '../assets/auto finance/5scanreceipt.jpeg';
+import afresult from '../assets/auto finance/6resultreceipt.jpeg';
+import afcashflow from '../assets/auto finance/7cashflow.jpeg';
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -38,6 +45,32 @@ const ProjectDetail = () => {
   const [activeImage, setActiveImage] = useState(null);
 
   const projectsData = {
+    "auto-finance": {
+      id: "auto-finance",
+      title: "Auto Finance",
+      slug: "auto-finance",
+      description: "Auto Finance is a personal finance web application designed to automate expense tracking with minimal manual input.",
+      longDescription: `Auto Finance allows users to register using a card-based profile, scan physical receipts with AI-powered OCR, and synchronize Gmail transaction emails from providers such as BCA, OVO, and GoPay.
+
+Built with React, Go (Gin), PostgreSQL, Google OAuth, OCR, and OpenRouter LLM integration, the application automatically extracts, categorizes, and stores transaction data. It provides a clean dashboard with balance summaries, income and expense tracking, recent transactions, receipt scan results, Gmail sync history, and category-based analytics through an interactive cashflow visualization.
+
+This project focuses on creating a smooth, modern financial tracking experience where users can monitor spending patterns, review imported transactions, and gain insights from their financial activity in a simple and intuitive interface.`,
+      category: "Web Development",
+      date: "Juni 2026",
+      client: "Personal Project",
+      technologies: ["React", "Go (Gin)", "PostgreSQL", "Google OAuth", "OCR", "OpenRouter LLM"],
+      githubUrl: "https://github.com/username/auto-finance",
+      mainImage: afdashboard,
+      screenshots: [
+        { id: 1, src: aflogin, caption: "1. Login Screen - Card-based profile registration and secure user authentication" },
+        { id: 2, src: afdashboard, caption: "2. Dashboard - Balance summary, income and expense tracking, and recent transactions" },
+        { id: 3, src: afgmail, caption: "3. Gmail Sync - Connect Gmail and import transaction emails from BCA, OVO, and GoPay" },
+        { id: 4, src: afsyncing, caption: "4. Sync Progress - Automated transaction synchronization and extraction process" },
+        { id: 5, src: afscan, caption: "5. Receipt Scanner - AI-powered OCR for scanning physical receipts" },
+        { id: 6, src: afresult, caption: "6. Receipt Result - Extracted receipt data with categorized transaction details" },
+        { id: 7, src: afcashflow, caption: "7. Cashflow Analytics - Interactive category-based visualization for spending insights" }
+      ]
+    },
     "weather-app": {
       id: "weather-app",
       title: "SkyBeacon",
